@@ -10,8 +10,8 @@ import getpages
 import login
 
 driver = 0
-username = "qinx9999@hotmail.co.th"
-password = "minX9999"
+username = input("Enter your email/username of iG : ")
+password = input("Enter your password of iG : ")
 
 
 
