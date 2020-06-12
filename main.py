@@ -26,6 +26,7 @@ def main():
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
     chrome_options.binary_location = CHROME_PATH
+    #driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH)
     driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH,chrome_options=chrome_options)
     l = login.Login(driver,username,password)
     l.signin()

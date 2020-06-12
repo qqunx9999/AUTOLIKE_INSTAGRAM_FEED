@@ -21,7 +21,7 @@ class Login:
         self.write("#react-root > section > main > article > div.rgFsT > div:nth-child(1) > div > form > div:nth-child(3) > div > label > input",self.password)
         self.write("#react-root > section > main > article > div.rgFsT > div:nth-child(1) > div > form > div:nth-child(4) > button > div")
         self.write("#react-root > section > main > div > div > div > div > button")
-        #self.write("body > div.RnEpo.Yx5HN > div > div > div > div.mt3GC > button.aOOlW.HoLwm")
+        self.write("body > div.RnEpo.Yx5HN > div > div > div > div.mt3GC > button.aOOlW.HoLwm")
         self.like_feed()
 
 
@@ -57,6 +57,9 @@ class Login:
         print(f"Ending")
 
     def write(self,content,text=""):
-        uid = WebDriverWait(self.driver,10).until(EC.presence_of_element_located((By.CSS_SELECTOR,content)))
+        try:
+            uid = WebDriverWait(self.driver,10).until(EC.presence_of_element_located((By.CSS_SELECTOR,content)))
+        except Exception:
+            return 0
         uid.click()
         uid.send_keys(text) if len(text)>0 else 0
