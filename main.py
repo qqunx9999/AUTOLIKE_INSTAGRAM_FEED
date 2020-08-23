@@ -12,8 +12,8 @@ import login,schedule
 driver = 0
 #username = input("Enter your email/username of iG : ")
 #password = input("Enter your password of iG : ")
-username = "qinx9999@hotmail.co.th"
-password = "minX9999"
+username = "email@domain.com"
+password = "Password"
 
 
 
