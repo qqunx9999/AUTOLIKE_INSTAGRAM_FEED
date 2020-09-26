@@ -10,19 +10,19 @@ import getpages
 import login,schedule
 
 driver = 0
-#username = input("Enter your email/username of iG : ")
-#password = input("Enter your password of iG : ")
+#Set up your account and chrome driver path here
+#---------------------------------------------------------------------------------------
 username = "email@domain.com"
 password = "Password"
-
-
+CHROMEDRIVER_PATH = '/home/mnlenium/Downloads/Chrome-Driver/chromedriver'
+driver = 0
+#---------------------------------------------------------------------------------------
 
 
 def main():
     global driver
     print("Running script..")
     CHROME_PATH = '/usr/bin/google-chrome'
-    CHROMEDRIVER_PATH = '/home/mnlenium/Downloads/Chrome-Driver/chromedriver'
     WINDOW_SIZE = "1920,1080"
     chrome_options = Options()
     chrome_options.add_argument("--headless")
