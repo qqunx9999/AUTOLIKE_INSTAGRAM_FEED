@@ -14,7 +14,7 @@ driver = 0
 #---------------------------------------------------------------------------------------
 username = "email@domain.com"
 password = "Password"
-CHROMEDRIVER_PATH = '/home/mnlenium/Downloads/Chrome-Driver/chromedriver'
+CHROMEDRIVER_PATH = 'Your Chrome Driver Path'
 driver = 0
 #---------------------------------------------------------------------------------------
 
